@@ -9,11 +9,11 @@ In this example you can see a simple dashboard with Dash using dash-boostrap, pa
 ### Run locally:
 - First, create the docker image
 ```docker
-    docker build -t dashwordbox .
+    docker build -t dashtest .
 ```
 - Then run the image
 ```docker
-    docker run -p 8080:80 dashwordbox
+    docker run -p 8080:80 dashtest
 ```
 
 Some images:
