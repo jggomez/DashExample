@@ -6,6 +6,16 @@ Dash is built by plotly, the same library widely used by data scientists. You ca
 
 In this example you can see a simple dashboard with Dash using dash-boostrap, panda, numpy and plotly and you can run it with docker locally and you can deploy to GCP or other cloud platform.
 
+### Run locally:
+- First, create the docker image
+```docker
+    docker build -t dashwordbox .
+```
+- Then run the image
+```docker
+    docker run -p 8080:80 dashwordbox
+```
+
 Some images:
 
 ![Screen Shot 2023-04-09 at 18 36 06](https://user-images.githubusercontent.com/661231/230812743-664dfdd4-190b-4eda-93e3-60228c1872a1.png)
