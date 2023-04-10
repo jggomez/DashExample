@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "dashwordboxapp"
+version = "0.1.0"
+description = ""
+authors = ["Juan Guillermo Gomez <juan@wordbox.ai>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+dash-core-components = "^2.0.0"
+dash-html-components = "^2.0.0"
+easy-plotly = "^0.2"
+plotly-express = "^0.4.1"
+pandas = "^1.5.3"
+dash = "^2.9.1"
+dash-bootstrap-components = "^1.4.1"
+gunicorn = "^20.1.0"
+numpy = "^1.24.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,17 @@
+steps:
+  - name: "gcr.io/kaniko-project/executor:latest"
+    args: ['--destination=gcr.io/$PROJECT_ID/dashwordbox',
+         '--cache=true']
+  - name: "gcr.io/cloud-builders/gcloud"
+    args:
+      [
+        "beta",
+        "run",
+        "deploy",
+        "dashwordbox",
+        "--image=gcr.io/$PROJECT_ID/dashwordbox",
+        "--platform",
+        "managed",
+        "--region=us-central1",
+        "--allow-unauthenticated"
+      ]
